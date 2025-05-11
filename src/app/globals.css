@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8f9fa;
+  --text: #1e293b;
+  --text-light: #64748b;
+  --primary: #10b981;
+  --primary-dark: #059669;
+  --secondary: #0ea5e9;
+  --accent: #f59e0b;
+  --white: #ffffff;
+  --black: #000000;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+}
+
+body {
+  color: var(--text);
+  background: var(--background);
+}
+
+.container {
+  @apply w-full mx-auto px-4;
+}
+
+.section {
+  @apply py-12 md:py-16;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors bg-emerald-600 text-white shadow hover:bg-emerald-700 h-9 px-4 py-2;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-emerald-600 bg-transparent shadow-sm hover:bg-emerald-500/20 hover:text-emerald-700 text-emerald-600 h-9 px-4 py-2;
+}
+
+.title {
+  @apply text-3xl md:text-4xl font-bold mb-4 text-slate-900;
+}
+
+.subtitle {
+  @apply text-2xl md:text-3xl font-bold mb-4 text-slate-900;
+}
+
+.card {
+  @apply bg-white p-6 rounded-lg shadow-md;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
