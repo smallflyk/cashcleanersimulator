@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  @apply w-full mx-auto px-4;
+  @apply w-full mx-auto;
 }
 
 .section {
@@ -30,11 +30,11 @@ body {
 }
 
 .btn-primary {
-  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors bg-emerald-600 text-white shadow hover:bg-emerald-700 h-9 px-4 py-2;
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors bg-emerald-600 text-white shadow hover:bg-emerald-700 h-9;
 }
 
 .btn-secondary {
-  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-emerald-600 bg-transparent shadow-sm hover:bg-emerald-500/20 hover:text-emerald-700 text-emerald-600 h-9 px-4 py-2;
+  @apply inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-emerald-600 bg-transparent shadow-sm hover:bg-emerald-500/20 hover:text-emerald-700 text-emerald-600 h-9;
 }
 
 .title {
@@ -46,7 +46,7 @@ body {
 }
 
 .card {
-  @apply bg-white p-6 rounded-lg shadow-md;
+  @apply bg-white rounded-lg shadow-md;
 }
 
 .scrollbar-hide {
