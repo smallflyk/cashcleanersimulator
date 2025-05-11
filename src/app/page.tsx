@@ -10,22 +10,22 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Header/Navigation */}
       <header className="sticky top-0 z-50 w-full border-b border-slate-700/50 bg-slate-800 py-4">
-        <div className="container px-4 sm:px-6 flex items-center justify-between mx-auto">
+        <div className="container flex items-center justify-between mx-auto">
           <div className="flex items-center gap-2">
             <div className="w-12 h-12 bg-emerald-600 rounded-full"></div>
             <Link className="font-bold text-xl text-slate-100" href="/">Cash Cleaner Simulator</Link>
           </div>
           <nav className="hidden md:flex items-center gap-6">
-            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="#gameplay">
+            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md p-1 transition-all duration-200 ease-in-out" href="#gameplay">
               <Scroll className="mr-2 h-4 w-4" />Game Guide
             </Link>
-            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="#download">
+            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md p-1 transition-all duration-200 ease-in-out" href="#download">
               <FileDown className="mr-2 h-4 w-4" />Download
             </Link>
-            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="#updates">
+            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md p-1 transition-all duration-200 ease-in-out" href="#updates">
               <RefreshCw className="mr-2 h-4 w-4" />News & Updates
             </Link>
-            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="#blog">
+            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md p-1 transition-all duration-200 ease-in-out" href="#blog">
               <StickyNote className="mr-2 h-4 w-4" />Dev Blog
             </Link>
           </nav>
@@ -38,21 +38,21 @@ export default function Home() {
         </div>
         <div id="mobile-menu" className="hidden md:hidden bg-slate-800 border-t border-slate-700/50">
           <nav className="flex flex-col items-center gap-4 py-4">
-            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="#gameplay">Game Guide</Link>
-            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="#download">Download</Link>
-            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="#updates">News & Updates</Link>
-            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md px-2 py-1 transition-all duration-200 ease-in-out" href="#blog">Dev Blog</Link>
+            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md p-1 transition-all duration-200 ease-in-out" href="#gameplay">Game Guide</Link>
+            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md p-1 transition-all duration-200 ease-in-out" href="#download">Download</Link>
+            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md p-1 transition-all duration-200 ease-in-out" href="#updates">News & Updates</Link>
+            <Link className="flex items-center text-slate-300 hover:text-white hover:bg-slate-700 hover:rounded-md p-1 transition-all duration-200 ease-in-out" href="#blog">Dev Blog</Link>
           </nav>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="py-12 md:py-16 px-4 sm:px-6">
+      <section className="py-12 md:py-16">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h1 className="title">Cash Cleaner Simulator: Get Rich or Get... Clean!</h1>
-              <p className="text-slate-600 mb-6">Welcome to the most satisfying job simulator you never knew you wanted! Grab your gloves, turn up the music, and get ready to clean, sort, and pack stacks of dirty money. It's part oddly satisfying cleaning sim, part fever dream. And yes, every single banknote is physics-simulated!</p>
+              <p className="text-slate-600 mb-6">Welcome to the most satisfying job simulator you never knew you wanted! Grab your gloves, turn up the music, and get ready to clean, sort, and pack stacks of dirty money. It&apos;s part oddly satisfying cleaning sim, part fever dream. And yes, every single banknote is physics-simulated!</p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="#features-section" className="btn-primary">Discover Key Features</Link>
                 <Link href="https://store.steampowered.com" target="_blank">
@@ -83,7 +83,7 @@ export default function Home() {
       {/* Gallery Section */}
       <section className="py-12 md:py-16">
         <div className="flex flex-col items-center gap-4 container mx-auto">
-          <div className="w-full max-w-4xl flex flex-col justify-center items-center text-center px-4">
+          <div className="w-full max-w-4xl flex flex-col justify-center items-center text-center">
             <h2 className="subtitle">Cash Cleaner Gallery: A Glimpse into the Action!</h2>
             <p className="text-sm text-slate-600">Take a peek at the satisfying (and sometimes messy) world of Cash Cleaner Simulator. Browse screenshots of the cleaning process, tools, and your workspace.</p>
           </div>
@@ -98,7 +98,7 @@ export default function Home() {
               loading="lazy"
             />
           </div>
-          <div className="flex w-full max-w-4xl items-center gap-2 px-4">
+          <div className="flex w-full max-w-4xl items-center gap-2">
             <button id="gallery-prev" className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors border border-slate-400 bg-transparent shadow-sm hover:bg-slate-200 hover:text-slate-700 text-slate-600 h-9 w-9 shrink-0">
               <ChevronLeft className="h-4 w-4" />
             </button>
@@ -123,11 +123,11 @@ export default function Home() {
       </section>
 
       {/* Gameplay Section */}
-      <section id="gameplay" className="py-12 md:py-16 mx-4 sm:px-6 bg-slate-700 text-slate-100">
+      <section id="gameplay" className="py-12 md:py-16 mx-4 bg-slate-700 text-slate-100">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">The Art of Cleaning: Gameplay in Cash Cleaner Simulator</h2>
-            <p className="text-slate-300 max-w-3xl mx-auto">Step into the shoes of a specialist in a very particular field. Receive dubious deliveries, identify counterfeit bills, wash away dirt and... other stains. Use a variety of tools, upgrade your lab, and manage your clandestine operations. It's not just about cleaning; it's about efficiency, discretion, and maybe uncovering a few secrets along the way.</p>
+            <p className="text-slate-300 max-w-3xl mx-auto">Step into the shoes of a specialist in a very particular field. Receive dubious deliveries, identify counterfeit bills, wash away dirt and... other stains. Use a variety of tools, upgrade your lab, and manage your clandestine operations. It&apos;s not just about cleaning; it&apos;s about efficiency, discretion, and maybe uncovering a few secrets along the way.</p>
             <div className="flex my-1 flex-wrap gap-2 justify-center mt-4">
               <Link className="text-sm p-2 rounded-full focus:outline-none focus:shadow-outline bg-sky-500/20 text-sky-300 hover:bg-sky-600/30" href="#tools">Tools of the Trade</Link>
               <Link className="text-sm p-2 rounded-full focus:outline-none focus:shadow-outline bg-emerald-500/20 text-emerald-300 hover:bg-emerald-600/30" href="#cleaning-process">The Cleaning Process</Link>
@@ -164,7 +164,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section id="features-section" className="py-16 bg-slate-200 px-4 sm:px-6">
+      <section id="features-section" className="py-16 bg-slate-200">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="subtitle">Key Features: What Makes Cash Cleaner Simulator So Satisfying</h2>
@@ -206,19 +206,19 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 bg-sky-600 px-4 sm:px-6">
+      <section className="py-12 bg-sky-600">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <h2 className="text-2xl md:text-3xl font-bold text-white">Ready to Start Your Cleaning Empire? Get Cash Cleaner Simulator!</h2>
             <Link href="#download">
-              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors shadow h-9 px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white">Buy on Steam Now!</button>
+              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors shadow h-9 bg-emerald-600 hover:bg-emerald-700 text-white">Buy on Steam Now!</button>
             </Link>
           </div>
         </div>
       </section>
 
       {/* Pro Tips Section */}
-      <section className="py-16 px-4 sm:px-6 bg-slate-900 text-slate-100">
+      <section className="py-16 bg-slate-900 text-slate-100">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Pro Cleaner Tips: Maximize Your Efficiency!</h2>
