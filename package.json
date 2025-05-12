@@ -1,0 +1,24 @@
+{
+  "name": "cash-cleaner-simulator",
+  "version": "1.0.0",
+  "description": "Cash Cleaner Simulator - A financial management simulation website",
+  "private": true,
+  "scripts": {
+    "vercel-build": "echo 'Static site, no build needed'"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smallflyk/cashcleanersimulator.git"
+  },
+  "keywords": [
+    "finance",
+    "simulator",
+    "education",
+    "amp"
+  ],
+  "author": "",
+  "license": "MIT"
+} 
