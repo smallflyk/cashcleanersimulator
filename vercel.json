@@ -2,7 +2,7 @@
   "buildCommand": null,
   "outputDirectory": ".",
   "framework": null,
-  "functions": null,
+  "functions": {},
   "installCommand": null,
   "routes": [
     {
